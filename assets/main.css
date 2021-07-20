@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(255, 254, 222);
+}
+
+.form {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(191, 255, 241);
+    padding: 5px;
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+.name {
+    height: 35px;
+    background: rgb(255, 254, 222);
+    padding: 15px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222;
+    font-size: 14px;
+    font-weight: 300;
+}
+.input {
+    height: 35px;
+    border-radius: 30px;
+    border: none;
+    margin: 5px;
+    padding: 0 25px;
+    display: flex;
+    width: 100%;
+    outline: none;
+}
+
+.btn {
+    background: #9649CB;
+    border: none;
+    width: 100px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    color: white;
+    border-radius: 30px;
+}
+
+.message {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.message > li {
+    padding: 10px;
+}
+
+.message li > span {
+    font-weight: 500;
+}
+
+.message > li:nth-child(odd){
+    background: rgb(236, 235, 188) ;
+}
