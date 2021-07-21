@@ -1,7 +1,7 @@
 const socket = io()
-const massages = document.querySelector('.messages')
+const messages = document.querySelector('.messages')
 const form = document.querySelector('.form')
-const input = document.querySelector('.inout')
+const input = document.querySelector('.input')
 const nameBlock = document.querySelector('.name')
 
 const userName = prompt ('Ваше имя:')
@@ -17,8 +17,8 @@ form.addEventListener('submit', (e) => {
 })
 
 
-socket.on('chat mesaage', (data) => {
+socket.on('chat message', (data) => {
     const item = document.createElement('li')
-    item.innerHTML = `<span>${data.name}</span> ${data.message}`
+    item.innerHTML = `<span>${data.name}</span>: ${data.message}`
     messages.appendChild(item)
 })

@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
 })
 
-app.use(express.static(__dirname + '/assets/main.js'))
+app.use(express.static(__dirname + '/assets/'))
 
 io.on('connection', (socket) => {
     socket.on('chat messages', (data) => {
